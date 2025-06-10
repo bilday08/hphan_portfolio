@@ -1,5 +1,53 @@
+# Node modules
 node_modules/
-dist/
-.env
-.DS_Store
 
+# Build output
+.next/
+out/
+
+# Static export build (nếu dùng `next export`)
+*.next/
+*.out/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Vercel deployment
+.vercel/
+
+# Local environment variables
+.env
+.env.*    # bao gồm .env.local, .env.development, .env.production
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# VS Code settings
+.vscode/
+
+# Output of next telemetry
+.next-tasks.json
+
+# Storybook (nếu dùng sau này)
+out/
+.storybook-out/
+
+# Generated files (nếu có)
+*.log
+*.tgz
+
+# Avoid accidentally committing production secrets
+LICENSE.key
